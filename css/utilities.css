@@ -1,0 +1,18 @@
+/* TEXT COLORS */
+
+.text-primary {
+	color: #28a745;
+}
+
+.text-secondary {
+	color: #0284d0;
+}
+
+.btn {
+	background-color: #0284d0;
+	padding: 10px 30px;
+}
+
+.btn:hover {
+	background-color: transparent;
+}

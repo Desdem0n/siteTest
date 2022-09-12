@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Silkscreen&display=swap");
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Silkscreen', cursive; */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	background-color: #fff;
+	color: #333;
+	line-height: 1.6;
+}
+
+h1,
+h2 {
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+p {
+	margin: 10px 0;
+}
+
+img {
+	width: 100%;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	color: #fff;
+	height: 70px;
+	padding: 0 30px;
+	box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.9);
+	opacity: 0.8;
+}
+
+.hero {
+	background: url("../img/home/showcase.jpg") center/cover fixed no-repeat;
+	height: 100vh;
+	position: relative;
+	color: #fff;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 568px) {
+	.hero::before {
+		content: "";
+		background-color: yellowgreen;
+	}
+	.navbar {
+		background-color: black;
+		opacity: 1;
+		z-index: 100;
+	}
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#navbar nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.navbar .logo {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 0 5px;
+
+	padding-right: 1rem;
+	transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+a:hover {
+	color: hotpink;
+}
+
+.flex-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+}
+
+.icons {
+	padding: 30px;
+}
+
+icons h3 {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.icons i {
+	background-color: #28a745;
+	color: #fff;
+	border-radius: 50%;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.icons i:hover {
+	cursor: pointer;
+	background-color: #83f09d;
+}
+
+@media (max-width: 568px) {
+	.flex-items {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		height: 140px;
+		padding: 20px;
+	}
+	.logo {
+		font-size: 3rem;
+		padding: 1rem;
+	}
+}
